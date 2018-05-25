@@ -1,0 +1,21 @@
+[package]
+name = "guruguru"
+version = "0.1.0"
+authors = ["SAPikachu <sapikachu@gmail.com>"]
+
+[dependencies]
+mioco = { git = "https://github.com/dpc/mioco.pre-0.9.git", rev = "23484def102216b3cfc09af4e3a9b15d622dc77e" }
+env_logger = "^0.5.10"
+log = "^0.4"
+libc = "*"
+failure = "^1.0.0"
+failure_derive = "*"
+byteorder = "^1"
+bitstream-io = "^0.6.3"
+lazy_static = "^1"
+trust-dns-proto = "^0.3.2"
+structopt = "^0.2.8"
+privdrop = "^0.2.0"
+
+[patch.crates-io]
+failure = { path = "../failure/failure-1.X" }
